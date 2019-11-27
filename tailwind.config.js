@@ -234,6 +234,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "Sailec",
         "-apple-system",
         "BlinkMacSystemFont",
         '"Segoe UI"',
