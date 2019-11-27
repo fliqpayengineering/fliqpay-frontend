@@ -20,19 +20,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/auth/logout": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/auth/signup": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/dashboard": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
