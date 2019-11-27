@@ -1,2 +1,1 @@
 # fliqpay-frontend
-FliqPay frontend
