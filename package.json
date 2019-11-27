@@ -13,9 +13,10 @@
     "recompose": "^0.30.0"
   },
   "scripts": {
-    "dev": "next",
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "dev": "npm run build:style && next",
     "build": "next build",
-    "start": "next start"
+    "start": "npm run build:style && next start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +32,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "postcss-cli": "^6.1.3"
   }
 }
