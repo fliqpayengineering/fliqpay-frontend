@@ -26,7 +26,6 @@ const ForgotPassword = () => {
 
   const handleChange = evt => {
     setLoginData({ ...loginData, [evt.target.name]: evt.target.value });
-    console.log(evt);
   };
 
   return (

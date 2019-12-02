@@ -6,13 +6,13 @@ export default function Button({
   icon,
   tooltip,
   className,
-  width = auto,
+  width,
   disabled,
   onClick
 }) {
   return (
     <button
-      className={`uppercase bg-secondary hover:bg-blue-900 text-gray-100 outline-none py-4 px-5 rounded inline-flex items-center justify-center text-sm font-medium ${className} w-${width}`}
+      className={`uppercase bg-secondary hover:bg-blue-900 text-gray-100 outline-none focus:outline-none py-4 px-5 rounded inline-flex items-center justify-center text-sm font-medium ${className} w-${width}`}
       title={tooltip}
       disabled={disabled}
       onClick={onClick}
