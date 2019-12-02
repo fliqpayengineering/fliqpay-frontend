@@ -21,7 +21,7 @@ const icons = {
 };
 
 export default function Alert({
-  type = "success",
+  type,
   title,
   message,
   icon,

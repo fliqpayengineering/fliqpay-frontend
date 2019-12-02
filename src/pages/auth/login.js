@@ -9,7 +9,6 @@ import CheckBox from "../../components/Form/CheckBox";
 import Alert from "../../components/Alert";
 import Button from "../../components/Button";
 import * as ROUTES from "../../constants/routes";
-import { setState } from "expect/build/jestMatchersObject";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({
@@ -27,8 +26,8 @@ const Login = () => {
   };
 
   const handleChange = evt => {
-    evt.persist();
-    setState({ ...loginData, [evt.target.name]: evt.target.value });
+    // evt.persist();
+    setLoginData({ ...loginData, [evt.target.name]: evt.target.value });
     console.log(evt);
   };
 
@@ -47,7 +46,7 @@ const Login = () => {
               </p>
             </div>
             <div className="w-full m-4 p-4">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <Input
                   name="email"
                   title="Email Address"
@@ -68,8 +67,14 @@ const Login = () => {
                   onChange={handleChange}
                 />
                 <CheckBox
+                  name="keepSignedIn"
                   value={loginData.keepSignedIn}
-                  onChange={handleChange}
+                  onChange={evt =>
+                    setLoginData({
+                      ...loginData,
+                      [evt.target.name]: !loginData[evt.target.name]
+                    })
+                  }
                   title="Keep me signed in"
                   className="mb-6"
                 />
@@ -101,28 +106,6 @@ const Login = () => {
           />
         </div>
       </div>
-
-      {/* <form onSubmit={handleSubmit}>
-        <input
-          placeholder="email"
-          name="email"
-          type="email"
-          value={loginData.email}
-          onChange={evt =>
-            setLoginData({ ...loginData, email: evt.target.value })
-          }
-        />
-        <input
-          placeholder="password"
-          type="password"
-          name="password"
-          value={loginData.password}
-          onChange={evt =>
-            setLoginData({ ...loginData, password: evt.target.value })
-          }
-        />
-        <button>submit</button>
-      </form> */}
     </div>
   );
 };

@@ -12,7 +12,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`uppercase bg-secondary hover:bg-blue-900 text-gray-100 py-4 px-5 rounded inline-flex items-center justify-center text-sm font-medium ${className} w-${width}`}
+      className={`uppercase bg-secondary hover:bg-blue-900 text-gray-100 outline-none py-4 px-5 rounded inline-flex items-center justify-center text-sm font-medium ${className} w-${width}`}
       title={tooltip}
       disabled={disabled}
       onClick={onClick}
