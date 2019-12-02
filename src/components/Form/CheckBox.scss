@@ -1,0 +1,40 @@
+.CheckBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+
+  & label {
+    cursor: pointer;
+  }
+
+  &:hover span {
+    &::before {
+      @apply bg-gray-100;
+    }
+  }
+  & input[type="checkbox"] {
+    opacity: 0;
+  }
+
+  & span {
+    margin-left: 0.5rem;
+
+    &::before {
+      display: inline-flex;
+      justify-content: center;
+      align-content: center;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      width: 20px;
+      @apply bg-transparent border rounded;
+    }
+  }
+  & input[type="checkbox"]:checked ~ span::before {
+    content: "\2713";
+    @apply bg-green-800 text-white border-0;
+  }
+}

@@ -12944,7 +12944,7 @@ video {
 
   font-weight: 400;
 
-  src: url("/fonts/Sailec-Regular.otf") format("opentype");
+  src: url("/fonts/Sailec.otf") format("opentype");
 }
 
 @font-face {
@@ -12952,7 +12952,7 @@ video {
 
   font-weight: 500;
 
-  src: url("/fonts/Sailec.otf") format("opentype");
+  src: url("/fonts/Sailec-Medium.otf") format("opentype");
 }
 
 @font-face {
@@ -12960,21 +12960,13 @@ video {
 
   font-weight: 600;
 
-  src: url("/fonts/Sailec-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Sailec";
-
-  font-weight: 700;
-
   src: url("/fonts/Sailec-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Sailec";
 
-  font-weight: 800;
+  font-weight: 700;
 
   src: url("/fonts/Sailec-Black.otf") format("opentype");
 }
@@ -13001,6 +12993,12 @@ html {
 
 body {
   font-family: Sailec, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: underline;
 }
 
 @media (min-width: 640px) {

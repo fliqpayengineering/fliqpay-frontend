@@ -3,7 +3,7 @@ import "./NavigationBar.scss";
 
 export default function NavigationBar() {
   return (
-    <nav className="p-6 flex h-sm bg-transparent fixed top-0">
+    <nav className="flex items-center w-full p-6 h-20 bg-white fixed top-0 z-10">
       <div className="">
         <img src={"/images/logo-primary.svg"} className="h-8" />
       </div>

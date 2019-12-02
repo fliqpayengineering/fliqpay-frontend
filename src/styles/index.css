@@ -22,26 +22,21 @@
 @font-face {
   font-family: "Sailec";
   font-weight: 400;
-  src: url("/fonts/Sailec-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "Sailec";
-  font-weight: 500;
   src: url("/fonts/Sailec.otf") format("opentype");
 }
 @font-face {
   font-family: "Sailec";
-  font-weight: 600;
+  font-weight: 500;
   src: url("/fonts/Sailec-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "Sailec";
-  font-weight: 700;
+  font-weight: 600;
   src: url("/fonts/Sailec-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Sailec";
-  font-weight: 800;
+  font-weight: 700;
   src: url("/fonts/Sailec-Black.otf") format("opentype");
 }
 
@@ -71,5 +66,5 @@ body {
 a:link,
 a:visited,
 a:active {
-  @apply text-gray-900 text-md;
+  text-decoration: underline;
 }
