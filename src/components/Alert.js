@@ -26,11 +26,12 @@ export default function Alert({
   message,
   icon,
   handleClose,
+  size,
   canClose
 }) {
   return (
     <div
-      className={`relative bg-${typeClasses[type]}-100 border-t-4 border-${typeClasses[type]}-500 rounded-b text-${typeClasses[type]}-900 px-4 py-3 shadow-md`}
+      className={`relative bg-${typeClasses[type]}-100 border-t- border-${typeClasses[type]}-500 rounded-b text-${typeClasses[type]}-900 px-4 py-3 shadow-m w-${size}`}
       role="alert"
     >
       <div class="flex">
@@ -49,7 +50,7 @@ export default function Alert({
         )}
         <div className="py-1">{icon ? icon : icons[type]}</div>
         <div>
-          <p className="font-bold">{title}</p>
+          <p className="font-semibold">{title}</p>
           <p className="text-sm">{message}</p>
         </div>
       </div>

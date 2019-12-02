@@ -12,49 +12,38 @@ import Alert from "../../components/Alert";
 import Button from "../../components/Button";
 import * as ROUTES from "../../constants/routes";
 
-const Login = () => {
+const ForgotPassword = () => {
   const [loginData, setLoginData] = useState({
     email: "",
-    password: "",
-    keepSignedIn: false,
     error: ""
   });
 
   const handleSubmit = async evt => {
     evt.preventDefault();
 
-    console.log("submit");
-    login({ token: "temp_token" });
+    console.log("forgot");
   };
 
   const handleChange = evt => {
-    // evt.persist();
     setLoginData({ ...loginData, [evt.target.name]: evt.target.value });
     console.log(evt);
-    // toast.notify(<Alert title="Incorrect password" message="Blah blah" />);
   };
 
   return (
     <div>
       <NavigationBar />
-      <div className="w-full min-h-screen flex mt-12 mb-0">
+      <div className="w-full min-h-screen flex mt-16 mb-0">
         <div className="w-3/5 bg-white flex flex-col items-center justify-center text-sm text-primarydark">
           <div className="flex flex-col items-center">
             <div className="text-center my-4">
               <h1 className="text-5xl font-semibold text-secondary">
-                Welcome Back.
+                Forgot Password?
               </h1>
               <p className="text-base font-medium text-primarydark">
-                Sign in to continue where you left off.
+                Enter the email address associated with your account.
               </p>
             </div>
             <div className="w-full m-4 p-4">
-              {/* <Alert
-                title="Incorrect password"
-                type="danger"
-                message="Blah blah"
-              /> */}
-
               <form onSubmit={handleSubmit}>
                 <Input
                   name="email"
@@ -66,34 +55,11 @@ const Login = () => {
                   onChange={handleChange}
                 />
 
-                <Input
-                  name="password"
-                  title="Password"
-                  type="password"
-                  placeholder="Enter your password"
-                  wrapperClass="mb-6"
-                  value={loginData.password}
-                  onChange={handleChange}
-                />
-                <CheckBox
-                  name="keepSignedIn"
-                  value={loginData.keepSignedIn}
-                  onChange={evt =>
-                    setLoginData({
-                      ...loginData,
-                      [evt.target.name]: !loginData[evt.target.name]
-                    })
-                  }
-                  title="Keep me signed in"
-                  className="mb-6"
-                />
-
-                <Button text="Log in" width="full" className="mb-6" />
+                <Button text="Resend password" width="full" className="mb-6" />
                 <div className="text-center mb-6">
+                  Still need help?{" "}
                   <Link href={ROUTES.AUTH.FORGOTPASSWORD}>
-                    <a className="underline text-secondary">
-                      Forgot login details?
-                    </a>
+                    <a className="underline text-secondary">Contact support</a>
                   </Link>
                 </div>
                 <div className="py-5 px-4 bg-blue-100 rounded font-medium">
@@ -119,4 +85,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ForgotPassword;
