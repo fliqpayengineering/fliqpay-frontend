@@ -16,6 +16,7 @@ module.exports = {
       white: "#fff",
 
       primary: "#940EC8",
+      primarydark: "#1F026B",
       secondary: "#4305EB",
 
       purple: {
@@ -154,7 +155,17 @@ module.exports = {
       "40": "10rem",
       "48": "12rem",
       "56": "14rem",
-      "64": "16rem"
+      "64": "16rem",
+      xs: "20rem",
+      sm: "24rem",
+      md: "28rem",
+      lg: "32rem",
+      xl: "36rem",
+      "2xl": "42rem",
+      "3xl": "48rem",
+      "4xl": "56rem",
+      "5xl": "64rem",
+      "6xl": "72rem"
     },
     backgroundColor: theme => theme("colors"),
     backgroundPosition: {
@@ -319,6 +330,16 @@ module.exports = {
     }),
     maxHeight: {
       full: "100%",
+      xs: "20rem",
+      sm: "24rem",
+      md: "28rem",
+      lg: "32rem",
+      xl: "36rem",
+      "2xl": "42rem",
+      "3xl": "48rem",
+      "4xl": "56rem",
+      "5xl": "64rem",
+      "6xl": "72rem",
       screen: "100vh"
     },
     maxWidth: {
@@ -440,13 +461,13 @@ module.exports = {
     borderCollapse: ["responsive"],
     borderColor: ["responsive", "hover", "focus"],
     borderRadius: ["responsive"],
-    borderStyle: ["responsive"],
-    borderWidth: ["responsive"],
+    borderStyle: ["responsive", "hover", "focus"],
+    borderWidth: ["responsive", "hover", "focus"],
     boxShadow: ["responsive", "hover", "focus"],
     cursor: ["responsive"],
     display: ["responsive"],
     fill: ["responsive"],
-    flex: ["responsive"],
+    flex: ["responsive", "hover", "focus"],
     flexDirection: ["responsive"],
     flexGrow: ["responsive"],
     flexShrink: ["responsive"],
