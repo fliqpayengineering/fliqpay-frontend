@@ -3,7 +3,6 @@
 
 // ./pages/_document.js
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Notifications from "react-notify-toast";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -16,8 +15,6 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body>
-          <Notifications />
-
           <Main />
           <NextScript />
         </body>
