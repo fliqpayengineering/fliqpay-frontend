@@ -22,7 +22,8 @@ export default function Select({
   prefix,
   suffix,
   handleChange,
-  required
+  required,
+  disabled
 }) {
   return (
     <div
@@ -34,21 +35,25 @@ export default function Select({
         </label>
       )}
       <select
-        className={`appearance-none border rounded px-3 py-3 outline-none bg-gray-s100 w-full focus:border-primarydark focus:bg-white ${selectClass} ${!value &&
-          "text-gray-500"}`}
+        className={`appearance-none border rounded px-3 py-3 outline-none w-full focus:border-primarydark bg-white ${selectClass} ${
+          !value ? "text-gray-500" : "text-primarydark border-primarydark"
+        }`}
         name={name}
         value={value}
         onChange={handleChange}
         required={required}
+        disabled={disabled}
       >
-        <option value="" disabled>
+        <option value="" label={placeholder} disabled>
           {placeholder}
         </option>
-        {options &&
+        {options.length > 0 &&
           options.map(option => {
+            const value = option.value ? option.value : option;
+            const label = option.label ? option.label : option;
             return (
-              <option key={option} value={option} label={option}>
-                {option}
+              <option key={value} value={value} label={label}>
+                {label}
               </option>
             );
           })}

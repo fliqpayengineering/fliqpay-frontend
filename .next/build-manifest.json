@@ -1,34 +1,72 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_d6a88dbe3071bd165157.js",
-    "static/development/dll/dll_d6a88dbe3071bd165157.js.map"
-  ],
+  "devFiles": [],
   "pages": {
+    "/": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/css/styles.8f62b56d.chunk.css",
+      "static/chunks/styles.152577850851d2d4fdbe.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
+    ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/css/styles.8f62b56d.chunk.css",
+      "static/chunks/styles.152577850851d2d4fdbe.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
     ],
     "/_polyfills": [
-      "static/runtime/polyfills.js",
-      "static/runtime/polyfills.js.map"
+      "static/runtime/polyfills-fcbe3198d41f4afaa7b0.js"
+    ],
+    "/auth/check-email": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/css/styles.8f62b56d.chunk.css",
+      "static/chunks/styles.152577850851d2d4fdbe.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
     ],
     "/auth/forgot": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/css/styles.8f62b56d.chunk.css",
+      "static/chunks/styles.152577850851d2d4fdbe.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
     ],
     "/auth/login": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/css/styles.8f62b56d.chunk.css",
+      "static/chunks/styles.152577850851d2d4fdbe.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
+    ],
+    "/auth/logout": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
+    ],
+    "/auth/signup": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/css/styles.8f62b56d.chunk.css",
+      "static/chunks/styles.152577850851d2d4fdbe.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
+    ],
+    "/dashboard": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-9369c5c69dbf6d4912cb.js",
+      "static/chunks/commons.8169c55cf3d90f27d030.js",
+      "static/css/styles.8f62b56d.chunk.css",
+      "static/chunks/styles.152577850851d2d4fdbe.js",
+      "static/runtime/main-d66dd619760866b0317d.js"
     ]
   }
 }

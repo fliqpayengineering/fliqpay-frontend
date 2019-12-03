@@ -41,7 +41,9 @@ export default function Input({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`appearance-none border rounded px-3 py-3 outline-none w-full focus:border-primarydark focus:bg-white ${inputClass}`}
+        className={`appearance-none border rounded px-3 py-3 outline-none w-full focus:border-primarydark focus:bg-white focus:border-dashed ${inputClass} ${
+          value ? "border-primarydark" : ""
+        }`}
       />
       {helperMessage && (
         <p className={`${helperClasses[helperType]} text-xs m-1`}>

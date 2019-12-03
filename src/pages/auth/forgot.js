@@ -46,17 +46,11 @@ const ForgotPassword = () => {
           onChange={handleChange}
         />
 
-        <Button text="Resend password" width="full" className="mb-6" />
+        <Button text="Reset password" width="full" className="mb-6" />
         <div className="text-center mb-6">
           Still need help?{" "}
           <Link href={ROUTES.AUTH.FORGOTPASSWORD}>
             <a className="underline text-secondary">Contact support</a>
-          </Link>
-        </div>
-        <div className="py-5 px-4 bg-blue-100 rounded font-medium">
-          <h2 className="text-secondary text-base">New to fliqpay?</h2>
-          <Link href={ROUTES.AUTH.FORGOTPASSWORD}>
-            <a className="underline">Create an account for your business.</a>
           </Link>
         </div>
       </form>

@@ -7,6 +7,7 @@ export default function AuthLayout({
   icon,
   sideImage,
   columnSize = "3/5",
+  innerColumnSize = "1/2",
   children
 }) {
   // Calculate column size for the side image
@@ -18,15 +19,15 @@ export default function AuthLayout({
   return (
     <div>
       <NavigationBar />
-      <div className="w-full min-h-screen flex pt-4">
+      <div className="flex w-full">
         <div
-          className={`w-${columnSize} bg-white flex flex-col items-center justify-center text-sm text-primarydark`}
+          className={`w-${columnSize} bg-white flex flex-col items-center justify-center text-sm text-primarydark pb-8`}
         >
-          <div className="flex flex-col w-1/3">
-            <div className="flex flex-col items-center my-8 font-medium">
+          <div className={`flex flex-col w-${innerColumnSize}`}>
+            <div className="flex flex-col items-center my-8 font-medium text-center">
               {icon && <img src={icon} className="my-8" />}
               <h1 className="text-4xl text-secondary">{title}</h1>
-              <p className="text-base font-normal text-primarydark">
+              <p className="text-base font-normal text-primarydark my-1">
                 {subtitle}
               </p>
             </div>

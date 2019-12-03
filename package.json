@@ -22,7 +22,8 @@
     "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
     "dev": "npm run build:style && next",
     "build": "next build",
-    "start": "npm run build:style && next start"
+    "start": "npm run build:style && next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"

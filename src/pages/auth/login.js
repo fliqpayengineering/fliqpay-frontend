@@ -18,7 +18,7 @@ const Login = () => {
     email: "",
     password: "",
     keepSignedIn: false,
-    error: ""
+    error: null
   });
 
   const handleSubmit = async evt => {
@@ -39,7 +39,6 @@ const Login = () => {
       title="Welcome Back."
       subtitle="Log in to your account."
       sideImage="https://images.unsplash.com/photo-1553531384-fdedae5009ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-      columnSize="3/4"
     >
       <form onSubmit={handleSubmit}>
         <Input
@@ -82,7 +81,7 @@ const Login = () => {
         </div>
         <div className="py-5 px-4 bg-blue-100 rounded font-medium">
           <h2 className="text-secondary text-base">New to fliqpay?</h2>
-          <Link href={ROUTES.AUTH.FORGOTPASSWORD}>
+          <Link href={ROUTES.AUTH.SIGNUP}>
             <a className="underline">Create an account for your business.</a>
           </Link>
         </div>
