@@ -6,14 +6,17 @@ import TextButton from "../components/TextButton";
 
 import * as ROUTES from "../constants/routes";
 import Link from "next/link";
+import NavigationBar from "../components/NavigationBar";
 
 export default function Index() {
+  // Preview purposes
+
   let [a, setA] = React.useState(1);
   return (
-    <div>
-      <h1>Fliqpay</h1>
-      <div className="flex flex-col">
-        <h1>Links</h1>
+    <div className="">
+      <NavigationBar />
+      <div className="flex flex-col p-6">
+        <small className="my-4">Links</small>
         {Object.keys(ROUTES.AUTH).map(key => (
           <Link href={ROUTES.AUTH[key]}>{key}</Link>
         ))}
@@ -21,16 +24,19 @@ export default function Index() {
           <Link href={ROUTES.DASHBOARD[key]}>{key}</Link>
         ))}
       </div>
-      <CheckBox checked={true} onChange={null} title="Keep me signed in" />
-      <Button type="info" text="Button" disabled={true} />
-      <TextButton type="black" text="Button" disabled={false} />
-      <Input
-        title="Your name"
-        placeholder="Enter your name"
-        helper={null}
-        value={a}
-        onChange={e => setA(e.target.value)}
-      />
+      <div className="p-6">
+        <p>Preview</p>
+        <CheckBox checked={true} onChange={null} title="Keep me signed in" />
+        <Button type="info" text="Button" disabled={true} />
+        <TextButton type="black" text="Button" disabled={false} />
+        <Input
+          title="Your name"
+          placeholder="Enter your name"
+          helper={null}
+          value={a}
+          onChange={e => setA(e.target.value)}
+        />
+      </div>
     </div>
   );
 }
