@@ -73,7 +73,7 @@ const Login = () => {
           className="mb-6"
         />
 
-        <Button text="Log in" width="full" className="mb-6" />
+        <Button text="Log in" width="full" className="mb-8" />
         <div className="text-center mb-6">
           <Link href={ROUTES.AUTH.FORGOTPASSWORD}>
             <a className="underline text-secondary">Forgot login details?</a>

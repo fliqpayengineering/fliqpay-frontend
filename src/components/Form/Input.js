@@ -18,16 +18,19 @@ export default function Input({
   wrapperClass,
   labelClass,
   inputClass,
-  helperMessage,
-  helperType,
+  helper,
   prefix,
   suffix,
   value,
   onChange
 }) {
+  const borderStyle =
+    helper && helper.type ? { borderColor: "currentColor" } : {};
   return (
     <div
-      className={`form-group flex flex-col text-primarydark text-sm ${wrapperClass}`}
+      className={`form-group flex flex-col text-sm ${wrapperClass} ${
+        helper && helper.type ? helperClasses[helper.type] : "text-primarydark"
+      }`}
     >
       {title && (
         <label htmlFor={name} className={`mb-1 ${labelClass}`}>
@@ -44,10 +47,11 @@ export default function Input({
         className={`appearance-none border rounded px-3 py-3 outline-none w-full focus:border-primarydark focus:bg-white focus:border-dashed ${inputClass} ${
           value ? "border-primarydark" : ""
         }`}
+        style={borderStyle}
       />
-      {helperMessage && (
-        <p className={`${helperClasses[helperType]} text-xs m-1`}>
-          {helperMessage}
+      {helper && helper.message && (
+        <p className={`${helperClasses[helper.type]} text-xs my-1 mx-3`}>
+          {helper.message}
         </p>
       )}
     </div>

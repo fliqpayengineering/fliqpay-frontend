@@ -97,7 +97,7 @@ const Signup = () => {
 
         <div className="flex flex-col items-center my-6">
           <CheckBox
-            className="my-3"
+            className="my-4"
             title="I agree to Fliqpay's Terms of service and Privacy Policy"
             name="tosAgree"
             handleChange={handleChange}
