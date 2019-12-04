@@ -22,11 +22,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`uppercase ${
-        variants[type]
-      } text-gray-100 outline-none focus:outline-none py-4 px-5 rounded inline-flex items-center justify-center text-sm font-medium ${className} w-${width} ${
-        disabled ? "bg-blue-100" : ""
-      }`}
+      className={`uppercase ${variants[type]} text-gray-100 outline-none focus:outline-none py-4 px-5 rounded inline-flex items-center justify-center text-sm font-medium ${className} w-${width}`}
       title={tooltip}
       disabled={disabled}
       onClick={onClick}
