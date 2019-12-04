@@ -18,6 +18,7 @@ module.exports = {
       primary: "#940EC8",
       primarydark: "#1F026B",
       secondary: "#4305EB",
+      secondarydark: "#3C04D1",
 
       purple: {
         100: "#F4E7F9",
@@ -454,7 +455,7 @@ module.exports = {
     alignSelf: ["responsive"],
     appearance: ["responsive"],
     backgroundAttachment: ["responsive"],
-    backgroundColor: ["responsive", "hover", "focus"],
+    backgroundColor: ["responsive", "hover", "focus", "disabled"],
     backgroundPosition: ["responsive"],
     backgroundRepeat: ["responsive"],
     backgroundSize: ["responsive"],
