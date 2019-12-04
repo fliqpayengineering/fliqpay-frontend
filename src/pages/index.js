@@ -7,7 +7,7 @@ export default function Index() {
     <div>
       <h1>Fliqpay</h1>
       <CheckBox checked={true} onChange={null} title="Keep me signed in" />
-      <Button type="warning" text="Button" disabled={false} />
+      <Button type="warning" text="Button" disabled={true} />
     </div>
   );
 }
