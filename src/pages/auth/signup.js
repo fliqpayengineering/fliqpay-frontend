@@ -12,6 +12,11 @@ import CheckBox from "../../components/Form/CheckBox";
 import Alert from "../../components/Alert";
 import Button from "../../components/Button";
 import * as ROUTES from "../../constants/routes";
+import countries from "../../constants/countries";
+
+const getFlagUrl = (strings, countryCode) => {
+  return `https://www.countryflags.io/${countryCode}/flat/48.png`;
+};
 
 const Signup = () => {
   const [signupData, setSignupData] = useState({
@@ -88,10 +93,21 @@ const Signup = () => {
           <Select
             title="Country"
             name="country"
-            options={["Nigeria", "United Kingdom"]}
+            options={Array.from(countries, country => ({
+              value: country.code,
+              label: country.name
+            }))}
             placeholder="Select country"
             value={signupData.country}
             handleChange={handleChange}
+            prefix={
+              signupData.country && (
+                <img
+                  src={getFlagUrl`${signupData.country}`}
+                  className="-mt-px"
+                />
+              )
+            }
           />
         </Grid>
 
@@ -100,7 +116,13 @@ const Signup = () => {
             className="my-4"
             title="I agree to Fliqpay's Terms of service and Privacy Policy"
             name="tosAgree"
-            handleChange={handleChange}
+            checked={signupData.tosAgree}
+            onChange={evt =>
+              setSignupData({
+                ...signupData,
+                [evt.target.name]: !signupData[evt.target.name]
+              })
+            }
           />
           <Button text="Create account" width="sm" className="my-3" />
           <div className="my-3">

@@ -35,6 +35,6 @@
   }
   & input[type="checkbox"]:checked ~ span::before {
     content: "\2713";
-    @apply bg-green-800 text-white border-0;
+    @apply bg-secondary text-white border-0;
   }
 }

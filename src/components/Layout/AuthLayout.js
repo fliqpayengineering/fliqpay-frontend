@@ -25,7 +25,7 @@ export default function AuthLayout({
         >
           <div className={`flex flex-col w-${innerColumnSize}`}>
             <div className="flex flex-col items-center my-8 font-medium text-center">
-              {icon && <img src={icon} className="my-8" />}
+              {icon && <img src={icon} className="my-8" alt={title} />}
               <h1 className="text-4xl text-secondary">{title}</h1>
               <p className="text-base font-normal text-primarydark my-1">
                 {subtitle}

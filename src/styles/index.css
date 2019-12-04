@@ -5,36 +5,43 @@
 @tailwind utilities;
 
 @font-face {
+  font-display: fallback;
   font-family: "Sailec";
   font-weight: 100;
   src: url("/fonts/Sailec-Hairline.otf") format("opentype");
 }
 @font-face {
+  font-display: fallback;
   font-family: "Sailec";
   font-weight: 200;
   src: url("/fonts/Sailec-Thin.otf") format("opentype");
 }
 @font-face {
+  font-display: fallback;
   font-family: "Sailec";
   font-weight: 300;
   src: url("/fonts/Sailec-Light.otf") format("opentype");
 }
 @font-face {
+  font-display: fallback;
   font-family: "Sailec";
   font-weight: 400;
   src: url("/fonts/Sailec.otf") format("opentype");
 }
 @font-face {
+  font-display: fallback;
   font-family: "Sailec";
   font-weight: 500;
   src: url("/fonts/Sailec-Medium.otf") format("opentype");
 }
 @font-face {
+  font-display: fallback;
   font-family: "Sailec";
   font-weight: 600;
   src: url("/fonts/Sailec-Bold.otf") format("opentype");
 }
 @font-face {
+  font-display: fallback;
   font-family: "Sailec";
   font-weight: 700;
   src: url("/fonts/Sailec-Black.otf") format("opentype");

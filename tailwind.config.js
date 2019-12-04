@@ -14,6 +14,7 @@ module.exports = {
 
       black: "#000",
       white: "#fff",
+      current: "currentColor",
 
       primary: "#940EC8",
       primarydark: "#1F026B",

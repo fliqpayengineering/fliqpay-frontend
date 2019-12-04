@@ -5063,6 +5063,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
 
   render() {
     return __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["Html"], {
+      lang: "en",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15

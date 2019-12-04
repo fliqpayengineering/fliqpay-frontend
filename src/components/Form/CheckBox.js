@@ -3,6 +3,7 @@ import "./CheckBox.scss";
 
 export default function CheckBox({
   name,
+  type,
   checked,
   title,
   onChange,
@@ -13,7 +14,7 @@ export default function CheckBox({
     <div
       className={`CheckBox flex flex-col text-primarydark text-sm ${className}`}
     >
-      <label className="text-gray-500">
+      <label className="text-primarydark">
         <input
           name={name}
           className="mr-2 leading-tight"
@@ -23,7 +24,7 @@ export default function CheckBox({
           required={required}
         />
         <span className="text-sm text-gray-800">{title}</span>
-        <span className="checkmark"></span>
+        <span className="checkmark bg-current"></span>
       </label>
     </div>
   );

@@ -34,30 +34,38 @@ export default function Select({
           {title}
         </label>
       )}
-      <select
-        className={`appearance-none border rounded px-3 py-3 outline-none w-full focus:border-primarydark bg-white ${selectClass} ${
-          !value ? "text-gray-500" : "text-primarydark border-primarydark"
-        }`}
-        name={name}
-        value={value}
-        onChange={handleChange}
-        required={required}
-        disabled={disabled}
-      >
-        <option value="" label={placeholder} disabled>
-          {placeholder}
-        </option>
-        {options.length > 0 &&
-          options.map(option => {
-            const value = option.value ? option.value : option;
-            const label = option.label ? option.label : option;
-            return (
-              <option key={value} value={value} label={label}>
-                {label}
-              </option>
-            );
-          })}
-      </select>
+      <div className="relative inline-flex justify-start items-center">
+        {prefix && (
+          <span className="absolute flex items-center justify-center px-3 whitespace-no-wrap text-gray-500 text-sm w-12 h-12">
+            {prefix}
+          </span>
+        )}
+        <select
+          id={name}
+          className={`appearance-none border rounded px-3 py-3 outline-none w-full focus:border-primarydark bg-white ${selectClass} ${
+            !value ? "text-gray-500" : "text-primarydark border-primarydark"
+          } ${prefix && "pl-12"}`}
+          name={name}
+          value={value}
+          onChange={handleChange}
+          required={required}
+          disabled={disabled}
+        >
+          <option value="" label={placeholder} disabled>
+            {placeholder}
+          </option>
+          {options.length > 0 &&
+            options.map(option => {
+              const value = option.value ? option.value : option;
+              const label = option.label ? option.label : option;
+              return (
+                <option key={value} value={value} label={label}>
+                  {label}
+                </option>
+              );
+            })}
+        </select>
+      </div>
       {helperMessage && (
         <p className={`${helperClasses[helperType]} text-xs m-1`}>
           {helperMessage}
