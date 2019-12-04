@@ -4280,7 +4280,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_tailwind_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/tailwind.css */ "./src/styles/tailwind.css");
 /* harmony import */ var _styles_tailwind_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_tailwind_css__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "/Users/dr_hemm/Projects/fliqpay-frontend/src/pages/_app.js";
+var _jsxFileName = "/Users/mac/Projects/fliqpay-frontend/src/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 

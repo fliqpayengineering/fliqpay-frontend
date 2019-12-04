@@ -5042,7 +5042,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/dr_hemm/Projects/fliqpay-frontend/src/pages/_document.js";
+var _jsxFileName = "/Users/mac/Projects/fliqpay-frontend/src/pages/_document.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 

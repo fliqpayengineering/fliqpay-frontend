@@ -7,7 +7,7 @@ export default function AuthLayout({
   icon,
   sideImage,
   columnSize = "3/5",
-  innerColumnSize = "1/2",
+  innerColumnSize = "sm",
   children
 }) {
   // Calculate column size for the side image
